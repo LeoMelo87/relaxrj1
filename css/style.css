@@ -1,0 +1,300 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/***************
+    Header
+****************/
+body {
+  background-color: #f0efef;
+}
+
+header  {
+  background-color: #033048;
+  max-width: 960px;
+
+}
+
+.mastheader {
+  max-width: 100%;
+}
+
+.relaxr1 {
+  float: left;
+  width: 20%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: white;
+  padding: 50px 50px 50px 120px;
+  text-align: center;
+}
+
+.menu {
+  float: right;
+  width: 80%;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: right;
+  margin: 60px;
+
+}
+
+.menu ul li {
+  display: inline;
+  margin-left: 50px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f9e42e;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+/************
+    Wrap
+*************/
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/************
+  Sections
+*************/
+
+.mainbody {
+  float: left;
+  max-width: 700px;
+}
+
+.section {
+  margin-top: 60px
+}
+
+.columnhead {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+img {
+  padding: 20px 0;
+}
+
+.psection {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #606161;
+}
+
+.psection:first-letter {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  color: #606161;
+  padding-right: 10px;
+  float: left;
+}
+
+.readmore {
+  padding: 30px;
+  text-align: right;
+}
+
+
+.readlink {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  color: #033048;
+}
+
+.readmore a:hover {
+  color: #f9e42e;
+}
+
+.break2 {
+  margin-bottom: 150px;
+}
+
+/******************
+      Aside
+******************/
+
+.sidebar {
+  width: 240px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+
+#categories {
+  margin-bottom: 40px;
+}
+
+  .subhead {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #033048;
+    margin-bottom: 20px;
+  }
+
+.categ ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #606161;
+  line-height: 1.3;
+}
+
+.categ ul li a:hover {
+  color: #f9e42e;
+}
+
+#AboutRelaxr {
+  margin-bottom: 40px;
+}
+
+.about {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #606161;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.learnmore a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #033048;
+}
+
+  .learnmore a:hover {
+    color: #f9e42e;
+  }
+
+.ad {
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  padding-top: 20px;
+}
+
+/*************
+    Sign Up
+**************/
+
+#sign {
+  clear: both;
+  background-color: #f9e42e;
+  height: 90px;
+}
+
+  .signbutton {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+  }
+
+  .button2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #033048;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 50px;
+
+  }
+
+  .linkbutton2 {
+    color: white;
+    text-decoration: none;
+
+  }
+
+/**********
+  Footer
+***********/
+
+footer {
+  background-color: #121212;
+  height: 250px;
+  max-width: 100%;
+}
+
+#social {
+  max-width: 90px;
+  margin: 0 auto;
+  padding-right: 10px;
+}
+
+  .twitter {
+    float: left;
+    padding-top: 30px;
+  }
+
+  .facebook {
+    float: right;
+    padding-top: 30px;
+  }
+
+  .footer{
+  color: #f9e42e;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  padding-top: 50px;
+  }
+
+  .copyright {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+  }
