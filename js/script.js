@@ -1,17 +1,30 @@
 $(document).ready(function(){
-  $('.readmore-content').hide();
-  $('.readmore').click(function(){
-    $('.readmore-content').show('slow');
-    $(this).hide('slow');
-  });
-});
 
-$(document).ready(function(){
-$('.learnmore-content').hide();
-  $('.learnmore').click(function(){
-    $('.learnmore-content').slideDown(function(){
-      $('learnmore-link').hide('slow');
-    });
+  function revealText() {
+    event.preventDefault();
 
-  });
+    $('#show-this-on-click').slideDown('slow');
+    $('.readmore').hide();
+    $('.readless').show();
+  }
+  $('.readmore a').click(revealText)
+
+  function hideText(){
+    event.preventDefault();
+
+    $('#show-this-on-click').slideUp('slow');
+    $('.readless').hide();
+    $('.readmore').show('slow');
+  }
+  $('.readless a').click(hideText)
+
+  function revealLearn() {
+    event.preventDefault();
+
+    $('#learnmoretext').slideDown('slow');
+    $('.learnmore').hide();
+  }
+    $('.learnmore').click(revealLearn)
+
+
 });

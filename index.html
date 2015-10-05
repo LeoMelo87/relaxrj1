@@ -1,120 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Relaxr</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='css/style.css' />
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
 
-  </head>
-  <body>
+		<title>Weather Background</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 
-      <header class="mastheader cf">
-          <h1 class="relaxr1">Relaxr</h1>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">Relaxr</h1>
+				<nav>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="main">
+			<div class="container">
+				<section id="posts">
+					<article class="post">
+						<h2><a href="#">How I implemented Relaxr in 2 weeks and changed my life.</a></h2>
+						<img src="images/blog_photo1.jpg" alt="Crew Meet">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
 
-          <nav class="menu">
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Blog</a><li>
-            </ul>
-          </nav>
+						<p class="readmore"><a href="#">Read more &gt;</a></p>
+						<p class="hide" id="show-this-on-click">Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+						<p class="readless hide"><a href="#">Read less &gt;</a></p>
+					</article>
+					<article class="post">
+						<h2><a href="#">I traveled across the globe thanks to Relaxr’s Excel auomation</a></h2>
+						<img src="images/blog_photo2.jpg" alt="Canoes">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
 
-      </header>
+					</article>
+				</section><!--
+			--><aside id="sidebar">
+					<!--
+					so why is there an empty comment on line 49-50 ?
+					Because out layout uses inline-block, we have to
+					squash the whitespace, check out this article for
+					more details:
+					https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+					-->
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Success stories</a></li>
+						<li><a href="#">Stats</a></li>
+						<li><a href="#">How tos</a></li>
+						<li><a href="#">Best of</a></li>
+						<li><a href="#">Business tips</a></li>
+					</ul>
+					<h3>About Relaxr</h3>
+					<p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.<br>
+					<a href="#" class="learnmore">Learn More</a> <span class="hide" id="learnmoretext">Here is some more text about this fun thing!</p>
+					<img src="images/ad-unit.png" alt="Ad Unit">
+				</aside>
+			</div>
+		</section>
 
-  <div class="wrap">
+		<aside id="bottom-cta">
+			<a class="button blue" href="#">Sign Up Now!</a>
+		</aside>
+		<footer>
+			<h4 class="logo">Relaxr</h4>
 
-      <div class="mainbody">
-          <article class="section">
-              <h1 class="columnhead">How I implemented Relaxr in 2 weeks and changed my life</h1>
-              <img src="images/blog_photo1.jpg" alt="blog photo 1" class="blogphoto"/>
-              <p class="psection">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="readmore-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </span></p>
-              <div class="readmore">
-                <a href="#" class="readlink">Read More ></a>
-              </div>
+			<ul>
+				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+			</ul>
 
-          </article> <!--End of Arctic1e-->
+			<p class="copyright">Copyright 2015. Relaxr.</p>
+		</footer>
 
-          <hr />
-
-          <article class="section">
-              <h1 class="columnhead">I travelled across the globe thanks to Relaxr's Excel automation</h1>
-              <img src="images/blog_photo2.jpg" alt="blog photo 2" class="blogphoto"/>
-              <p class="psection">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="readmore-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </span></p>
-              <div class="readmore">
-                <a href="#" class="readlink">Read More ></a>
-              </div>
-              <br />
-
-          </article> <!--End of Article2-->
-
-          <hr class="break2"/>
-
-      </div>
-
-      <aside class="sidebar">
-          <section id="categories">
-            <h2 class="subhead">Categories</h2>
-            <nav class="categ">
-              <ul>
-                <li><a href="#">Success stories</a></li>
-                <li><a href="#">Stats</a></li>
-                <li><a href="#">How tos</a></li>
-                <li><a href="#">Best of</a></li>
-                <li><a href="#">Business tips</a></li>
-              </ul>
-            </nav>
-          </section> <!--End of Categories-->
-
-          <section id="AboutRelaxr">
-            <h2 class="subhead">About Relaxr</h2>
-            <p class="about">Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.<span class="learnmore-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-              <div class="learnmore">
-                <a href="#" class="learnmore-link">Learn more</a>
-              </div>
-          </section> <!--End of About Relaxr-->
-
-        <section class="ad">
-          <h2 class="subhead">Ad Unit</h2>
-        </section>
-
-      </aside>
-
-    </div>
-
-    <div id="sign">
-        <div class="signbutton">
-          <button type="#" name="Sign" class="button2"><a href="#" class="linkbutton2">Sign Up Now!</a></button>
-        </div>
-
-    </div> <!--End of sign div-->
-
-    <footer>
-      <h1 class="footer">Relaxr</h1>
-      <div id="social">
-        <a href="#">
-          <img src="images/twitter.png" alt="Twitter" class="twitter" />
-        </a>
-        <a href="#">
-          <img src="images/facebook.png" alt="Facebook" class="facebook" />
-        </a>
-      </div> <!--End of social div-->
-
-      <p class="copyright">
-        Copyright 2015. Relaxr.
-      </p>
-    </footer>
-
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
-  </body>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>
