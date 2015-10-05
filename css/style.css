@@ -149,6 +149,10 @@ img {
   margin-bottom: 150px;
 }
 
+.hide{
+  display:none;
+}
+
 /******************
       Aside
 ******************/
